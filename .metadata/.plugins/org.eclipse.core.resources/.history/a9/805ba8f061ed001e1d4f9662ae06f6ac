@@ -1,0 +1,10 @@
+package com.project.pjshop.game.model.dao;
+
+import java.sql.Connection;
+
+public class GameDAO {
+
+	public int loot(Connection conn, int memberNo) {
+	}
+
+}

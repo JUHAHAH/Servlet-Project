@@ -1,0 +1,23 @@
+package com.project.pjshop.item.contorller;
+
+import static com.project.pjshop.common.JDBCTemplate.close;
+import static com.project.pjshop.common.JDBCTemplate.getConnection;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+public class ItemService {
+private MemberDAO dao = new MemberDAO();
+	
+	
+	public Member loginMember(String inputId, String inputPw) throws SQLException {
+		Connection conn = getConnection();
+		
+		Member member = dao.login(conn, inputId, inputPw);
+		
+		close(conn);
+		
+		return member;
+		
+	}
+}

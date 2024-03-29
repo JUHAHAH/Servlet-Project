@@ -1,0 +1,5 @@
+package com.project.pjshop.member.model.service;
+
+public class MemberService {
+
+}

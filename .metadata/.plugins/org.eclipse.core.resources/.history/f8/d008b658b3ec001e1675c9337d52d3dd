@@ -1,0 +1,12 @@
+package com.project.pjshop.item.dao;
+
+import java.sql.Connection;
+
+public class ItemDAO {
+
+	public int selectAll(Connection conn) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

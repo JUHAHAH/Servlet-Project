@@ -1,0 +1,32 @@
+package com.project.pjshop.item.model.service;
+
+import static com.project.pjshop.common.JDBCTemplate.*;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.project.pjshop.item.dao.ItemDAO;
+import com.project.pjshop.model.dto.Items;
+
+public class ItemService {
+	private ItemDAO dao = new ItemDAO();
+
+	public List<Items> selectAll() throws SQLException {
+		Connection conn = getConnection();
+		
+		
+		List<Items> itemList = dao.selectAll(conn);
+		
+		close(conn);
+		
+		return itemList;
+		
+	}
+
+	public int purchase(int itemNo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

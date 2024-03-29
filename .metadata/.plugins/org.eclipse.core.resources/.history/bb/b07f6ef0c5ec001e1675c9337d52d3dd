@@ -1,0 +1,38 @@
+package com.project.pjshop.item.controller;
+
+import java.io.IOException;
+
+import com.project.pjshop.item.model.service.ItemService;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+
+@WebServlet("/purchase")
+public class PurchaseController extends HttpServlet{
+	ItemService service = new ItemService();
+	
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String itemNo = req.getParameter("itemNo");
+		
+		HttpSession session = req.getSession();
+		
+		int result = service.purchase(itemNo);
+		
+		try {
+			
+		} catch (Exception e) {
+
+		
+		}
+		
+		
+	}
+
+}

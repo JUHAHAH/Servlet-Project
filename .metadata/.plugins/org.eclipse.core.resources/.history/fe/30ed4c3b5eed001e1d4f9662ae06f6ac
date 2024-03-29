@@ -1,0 +1,7 @@
+package com.project.pjshop.member.contorller;
+
+import jakarta.servlet.http.HttpServlet;
+
+public class ResetController extends HttpServlet{
+
+}

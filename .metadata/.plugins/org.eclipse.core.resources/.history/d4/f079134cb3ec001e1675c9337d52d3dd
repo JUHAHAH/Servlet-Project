@@ -1,0 +1,5 @@
+package com.project.pjshop.item.dao;
+
+public class ItemDAO {
+
+}

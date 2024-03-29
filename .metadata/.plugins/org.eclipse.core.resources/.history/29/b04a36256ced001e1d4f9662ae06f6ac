@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  color: rgb(55, 58, 62);
+  margin: 0;
+  font-family: 'EF_jejudoldam';
+}
+
+@font-face {
+  font-family: 'EF_jejudoldam';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+body {
+	margin: 0;
+   background-image: url('../images/main.jpg');
+  background-size: contain;
+  
+}
+
+header {
+  font-size: 26px;
+  position: top;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  background-image: url('../images/header.png');
+  background-size: contain;
+  height: 90px;
+}
+
+header > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  padding-top: 18px;
+  padding-right: 20px;
+}
+
+header > div > div {
+  display: flex;
+}
+header > div > div > * {
+  padding-left: 8px;
+}
+header > div > div > a {
+  padding-left: 10px;
+}
+.itemFrame {
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: 350px;
+}
+
+.itemFrame > * {
+  font-size: 23px;
+}
+
+.itemPur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemImage {
+  display: flex;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 240px;
+  width: 240px;
+  overflow: hidden;
+}

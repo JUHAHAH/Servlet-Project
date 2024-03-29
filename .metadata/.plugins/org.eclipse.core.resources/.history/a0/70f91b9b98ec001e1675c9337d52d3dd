@@ -1,0 +1,8 @@
+package com.project.pjshop.model.dao;
+
+public class Member {
+	private int memberNo;
+	private String mmberId;
+	private String memberName;
+	
+}

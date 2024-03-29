@@ -1,0 +1,5 @@
+package com.project.pjshop.item.model.service;
+
+public class ItemService {
+
+}

@@ -1,0 +1,5 @@
+package com.project.pjshop.common;
+
+public class JDBCTemplate {
+
+}

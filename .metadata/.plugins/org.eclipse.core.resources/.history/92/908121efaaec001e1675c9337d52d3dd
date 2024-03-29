@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.header {
+  font-family: 'Abril Fatface', serif;
+
+  padding: 10px 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: col;
+}
+
+.header > * {
+  display: flex;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: col
+  justify-content: space-between;
+}
+
+.headerBase {
+  height: 20px;
+}

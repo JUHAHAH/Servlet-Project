@@ -1,0 +1,8 @@
+package com.project.pjshop.member.contorller;
+
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet("/signup")
+public class SignupController {
+
+}

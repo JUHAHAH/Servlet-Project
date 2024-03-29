@@ -1,0 +1,27 @@
+package com.project.pjshop.game.model.service;
+
+import static com.project.pjshop.common.JDBCTemplate.close;
+import static com.project.pjshop.common.JDBCTemplate.commit;
+import static com.project.pjshop.common.JDBCTemplate.getConnection;
+import static com.project.pjshop.common.JDBCTemplate.rollback;
+
+import java.sql.Connection;
+
+public class GameService {
+
+	public int loot(String memberId) {
+		Connection conn = getConnection();
+		
+		int result = dao.loot(conn, memberNo, itemNo);
+		
+		if(result > 0) commit(conn);
+		else rollback(conn);
+		
+		close(conn);
+		
+		return result;
+		
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.project.pjshop.game.contorller;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+@WebServlet("/clicker")
+public class ClickerGameController extends HttpServlet{
+	
+}

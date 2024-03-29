@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<jsp:include page="/shared/header.jsp"></jsp:include>
+	<form action="">
+		아이디: <input name="memberId" value="${ sessionScope.loginMember.memberId }"> <br>
+		이름: <input name="memberName" value="${ sessionScope.loginMember.memberId }"> <br>
+		비번: <input name="memberName" value="${ sessionScope.loginMember.memberId }"> <br>
+		이름: <input name="memberName" value="${ sessionScope.loginMember.memberId }"> <br>
+		
+		<button>정보 수정</button>
+	</form>
+	<jsp:include page="/shared/footer.jsp"></jsp:include>
+</body>
+</html>

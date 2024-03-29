@@ -1,0 +1,15 @@
+package com.project.pjshop.member.model.dao;
+
+import static com.project.pjshop.common.JDBCTemplate.*;
+
+import com.project.pjshop.model.dao.Member;
+
+public class MemberService {
+
+	public Member loginMember(String inputId, String inputPw) {
+
+	
+	}
+	
+	
+}
